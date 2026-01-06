@@ -7,14 +7,13 @@
 body{
     background:#f5f5f5;
     height: 100vh;
-    width: 100%;
 }
 header{
      position:fixed;
      top:0;
         left:0;
         width:100%;        
-        background:black;
+background:black;
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -27,7 +26,7 @@ header .logo{
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:2px;
-    padding:6px;
+    padding:4px;
     font-family: 'Poppins', sans-serif;
     transition: 1s;
  
@@ -39,7 +38,8 @@ header .logo:hover{
     cursor:pointer;
     }
 .top-nav ul{
-     padding: 6px;
+     padding: 3px;
+     margin-top: 30px;
      display:flex;
      list-style:none;
 
@@ -49,14 +49,15 @@ header .logo:hover{
     text-decoration:none;
     font-size:1.2em;
     font-weight:500;
-    transition: 0.4s;
+    transition: 0.5s;
          margin-left: 40px;
     font-family: 'Poppins', sans-serif;
 }
 .top-nav li a:hover{
     color:black;
     background:white;
-    border-radius: 20px;
+    border-radius: 4px;
+    height:24px;
     cursor:pointer;
 }
 .content{
@@ -85,19 +86,22 @@ header .logo:hover{
     border-radius: 10px;
     transition: 0.4s;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5px;
     border: none;
     margin-top: 0px;
+    overflow: auto;
 }
 .left-nav ul li a:hover{
-    background:#ff3d00;
+    background:goldenrod;
     color:#fff;
+    padding: 6px;
     opacity: 1;
     letter-spacing: 1.5px;
     gap: 20px;
     cursor:pointer;
 }
 .main-content{
-    margin-left:400px;
+    margin-left:500px;
     margin-top: 80px;
 }
 
@@ -166,11 +170,13 @@ align-items: center;
    .javascript-content{
     align-items: center;
     justify-content: center;
+    margin-top:50px;
   display:none;
+     margin-left: 400px;
    }
    .javascript-content h2{
     font-size:3em;
-    margin-bottom:10px;
+    margin-top:20px;
     font-family: erica one, sans-serif;
     color:rgb(68, 68, 68);
    }
@@ -207,4 +213,45 @@ details{margin-left: 200px;
     font-size: 1.5em;
     color: rgb(68, 68, 68);
     position: relative;
+}
+@media screen and ( width:724px) {
+    body{
+        width:100%;
+    }
+.top-nav ul li{
+    display:none;
+}
+
+    
+   
+}
+.btn{
+    color:black;
+    background-color:white;
+    font-size:1.5em;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-right:30px;
+    padding:6px;
+}
+.about-section{
+    align-items: center;
+    justify-content: center;
+    margin-left:500px; 
+    margin-top:200px;
+    color:black;
+    width: 100%;
+}
+
+
+.about-section h3{
+    font-size:2.9em;
+    text-shadow: #ff3d00;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.about-section p{
+
+    margin-right: 60px;
+    width: 100%;
 }
